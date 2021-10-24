@@ -4,7 +4,7 @@ import './style.css';
 import camera from './img/camera.svg';
 
 const Header = () => {
-  retrun (
+  return (
     <>
       <div className = "headerWrapper">
         <h1>
