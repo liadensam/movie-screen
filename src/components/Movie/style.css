@@ -5,3 +5,7 @@
 .posterImg {
   width: 150px;
 }
+
+.movieInfo li {
+  list-style-type: none;
+}
