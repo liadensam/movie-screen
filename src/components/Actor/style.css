@@ -1,3 +1,9 @@
-.actors ul li {
+.actors {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.actors li {
   list-style-type: none;
 }

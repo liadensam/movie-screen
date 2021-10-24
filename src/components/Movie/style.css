@@ -1,3 +1,7 @@
+.movieCard {
+  gap: 0.5rem;
+}
+
 .posterImg {
   width: 150px;
 }

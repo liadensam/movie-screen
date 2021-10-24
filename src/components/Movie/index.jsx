@@ -6,7 +6,7 @@ import Actor from '../Actor';
 const Movie = (props) => {
   return (
     <>
-      <div className = "gridContainer">
+      <div className = "movieCard">
         <div className = "poster">
           <img className = "posterImg" alt = "movie poster" src = {props.poster}/>
         </div>

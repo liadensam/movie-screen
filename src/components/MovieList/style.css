@@ -1,0 +1,6 @@
+.movieListWrapper {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
