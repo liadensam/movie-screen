@@ -8,7 +8,7 @@ const Movie = (props) => {
     <>
       <div className = "gridContainer">
         <div className = "poster">
-          <img className = "posterImg" alt = "movie poster" src = {`./../assets/ ${props.poster}`}/>
+          <img className = "posterImg" alt = "movie poster" src = {`./../assets/${props.poster}.jpg`}/>
         </div>
 
         <div className = "rating">
@@ -25,7 +25,7 @@ const Movie = (props) => {
 
           <h5>V hlavních rolích:</h5>
           <ul className = "movieActors">
-            <li>{props.cast.map(actor => <Actor key = {actor.id} name = {actor.name} as = {actor.as}/>)}</li>
+            <li>{props.cast.map((actor) => <Actor key = {actor.id} name = {actor.name} as = {actor.as}/>)}</li>
           </ul>
         </div>
 
