@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-import Actor from '../Actor';
+import Actor from './../Actor';
 
 const Movie = (props) => {
   return (
