@@ -1,18 +1,18 @@
 import React from 'react';
 import './style.css';
 
-import Actor from './../Actor';
+import Actor from '../Actor';
 
 const Movie = (props) => {
   return (
     <>
       <div className = "gridContainer">
         <div className = "poster">
-          <img className = "posterImg" alt = "movie poster" src = {`./../assets/${props.poster}.jpg`}/>
+          <img className = "posterImg" alt = "movie poster" src = {props.poster}/>
         </div>
 
         <div className = "rating">
-          <p>{props.rating}</p>
+          <p>{props.rating}/10</p>
         </div>
 
         <div className = "movieDescription">
@@ -24,9 +24,15 @@ const Movie = (props) => {
           </ul>
 
           <h5>V hlavních rolích:</h5>
-          <ul className = "movieActors">
-            <li>{props.cast.map((actor) => <Actor key = {actor.id} name = {actor.name} as = {actor.as}/>)}</li>
-          </ul>
+          <div className = "movieActors">
+            {props.cast.map(actor => 
+            <Actor 
+            key = {actor.id} 
+            name = {actor.name} 
+            as = {actor.as}
+            />
+            )}
+          </div>
         </div>
 
         
