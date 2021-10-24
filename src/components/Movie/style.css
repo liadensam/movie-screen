@@ -1,13 +1,19 @@
 .movieCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  width: 250px;
+  width: 400px;
   margin-right: 1rem;
   margin-bottom: 1rem;
+  display: flex;
+  position: relative;
 }
 
 /* .posterImg {
   width: 150px;
 } */
+
+.rating {
+  position: absolute;
+}
 
 .movieInfo {
   padding-left: 0;
@@ -15,4 +21,10 @@
 
 .movieInfo li {
   list-style-type: none;
+}
+
+.movieActors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 }

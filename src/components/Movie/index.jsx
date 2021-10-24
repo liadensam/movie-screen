@@ -10,7 +10,7 @@ const Movie = (props) => {
         <div className = "poster">
           <img className = "posterImg" alt = "movie poster" src = {props.poster}/>
         </div>
-
+        
         <div className = "rating">
           <p>{props.rating}/10</p>
         </div>
