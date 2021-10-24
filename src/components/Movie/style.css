@@ -9,6 +9,10 @@
   width: 150px;
 } */
 
+.movieInfo {
+  padding-left: 0;
+}
+
 .movieInfo li {
   list-style-type: none;
 }
