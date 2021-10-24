@@ -5,7 +5,6 @@ import './style.css';
 import movies from './movies';
 
 import Header from './components/Header';
-import Movie from './components/Movie';
 import MovieList from './components/MovieList';
 
 
