@@ -1,30 +1,62 @@
 .movieCard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 400px;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+  border-radius: 3px;
   display: flex;
   position: relative;
+  padding: 1.5rem;
+  background-color: var(--white);
+  overflow: hidden;
 }
 
-/* .posterImg {
-  width: 150px;
-} */
+.movieCard:hover {
+  transform: scale(1.01);
+  transition: transform 100ms;
+}
+
+.posterImg {
+  width: 120px;
+  margin-right: 1rem;
+}
 
 .rating {
   position: absolute;
+  background-color: var(--highlight-color);
+  transform: rotate(-30deg);
+  color: var(--white);
+  width: 200px;
+  text-align: center;
+  top: 6%;
+  left: -15%;
+  box-shadow: var(--shadow);
 }
 
-.movieInfo {
-  padding-left: 0;
+.rating b {
+  font-size: larger;
+}
+
+.movieDescription h3 {
+  margin-bottom: 1rem;
+  color: var(--highlight-color);
+}
+
+.movieDescription h5 {
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  color: var(--highlight-color);
 }
 
 .movieInfo li {
   list-style-type: none;
 }
 
+.movieInfo li span {
+  color: var(--additional-color);
+}
+
 .movieActors {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.5rem;
 }

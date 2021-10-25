@@ -8,19 +8,19 @@ const Movie = (props) => {
     <>
       <div className = "movieCard">
         <div className = "poster">
-          <img className = "posterImg" alt = "movie poster" src = {props.poster}/>
+          <img className = "posterImg" alt = "movie poster" src = {`./assets/${props.poster}`}/>
         </div>
         
         <div className = "rating">
-          <p>{props.rating}/10</p>
+          <p><b>{props.rating}</b> / 10</p>
         </div>
 
         <div className = "movieDescription">
-          <h4>{props.title}</h4>
+          <h3>{props.title}</h3>
           <ul className = "movieInfo">
-            <li><b>Rok vydání:</b>{props.year}</li>
-            <li><b>Žánr:</b>{props.genre}</li>
-            <li><b>Režie:</b>{props.director}</li>
+            <li><b>Rok vydání: </b><span>{props.year}</span></li>
+            <li><b>Žánr: </b><span>{props.genre}</span></li>
+            <li><b>Režie: </b><span>{props.director}</span></li>
           </ul>
 
           <h5>V hlavních rolích:</h5>
