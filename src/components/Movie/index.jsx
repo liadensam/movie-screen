@@ -18,12 +18,12 @@ const Movie = (props) => {
         <div className = "movieDescription">
           <h3>{props.title}</h3>
           <ul className = "movieInfo">
-            <li><b>Rok vydání: </b><span>{props.year}</span></li>
-            <li><b>Žánr: </b><span>{props.genre}</span></li>
-            <li><b>Režie: </b><span>{props.director}</span></li>
+            <li><b>Year: </b><span>{props.year}</span></li>
+            <li><b>Genre: </b><span>{props.genre}</span></li>
+            <li><b>Director: </b><span>{props.director}</span></li>
           </ul>
 
-          <h5>V hlavních rolích:</h5>
+          <h5>Main stars:</h5>
           <div className = "movieActors">
             {props.cast.map(actor => 
             <Actor 

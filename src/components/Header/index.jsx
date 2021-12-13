@@ -8,7 +8,7 @@ const Header = () => {
       <div className = "headerWrapper">
         <h1>
           <img className ="logo" src={camera} alt="Logo" />
-          V našem kině právě uvádíme
+          Currently screening
         </h1>
       </div>
   )
