@@ -5,7 +5,7 @@ import Actor from '../Actor';
 
 const Movie = (props) => {
   return (
-    <>
+
       <div className = "movieCard">
         <div className = "poster">
           <img className = "posterImg" alt = "movie poster" src = {`./assets/${props.poster}`}/>
@@ -27,7 +27,7 @@ const Movie = (props) => {
           <div className = "movieActors">
             {props.cast.map(actor => 
             <Actor 
-            key = {actor.id} 
+            key = {actor.name} 
             name = {actor.name} 
             as = {actor.as}
             />
@@ -37,7 +37,7 @@ const Movie = (props) => {
 
         
       </div>
-    </>
+
   )
 }
 
